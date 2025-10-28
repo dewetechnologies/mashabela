@@ -2729,6 +2729,325 @@ button {
     opacity: 0.7;
 }
 
+/* === PREMIUM FOOTER DESIGN === */
+.premium-footer {
+    background: var(--white-bro); /* Match nav bar */
+    color: var(--neutral-700);
+    font-family: var(--font-body);
+    position: relative;
+    margin-top: 60px;
+}
+
+/* Floating Newsletter Signup */
+.newsletter-floating {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 40px;
+}
+
+.newsletter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.newsletter-content {
+    background: var(--neutral-50);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-16);
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+    max-width: 700px;
+    margin: -80px auto 0; /* Pulls it up over the footer top edge */
+    position: relative;
+    z-index: 10;
+}
+
+.newsletter-content i {
+    font-size: var(--text-4xl);
+    color: var(--primary-800);
+    margin-bottom: var(--space-4);
+}
+
+.newsletter-content h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    color: var(--primary-900);
+    margin-bottom: var(--space-3);
+}
+
+.newsletter-content p {
+    color: var(--neutral-600);
+    margin-bottom: var(--space-8);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 16px 24px;
+    font-size: var(--text-base);
+    color: var(--neutral-800);
+    background: var(--white-bro);
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--radius-full) 0 0 var(--radius-full);
+}
+
+.newsletter-form input::placeholder {
+    color: var(--neutral-400);
+    font-weight: 400;
+}
+
+.subscribe-btn {
+    background: var(--primary-800);
+    color: var(--white-bro);
+    border: none;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0; /* This was from the previous change */
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    white-space: nowrap;
+    /* Make it a square */
+    padding: 0;
+    width: 55px; /* Match input height */
+    height: 55px; /* Match input height */
+    font-size: var(--text-lg);
+}
+
+.subscribe-btn:hover {
+    background: #c19a6b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Footer Content */
+.footer-main {
+    padding: 60px 0 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-column {
+    max-width: 300px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-5);
+    color: var(--primary-900);
+    line-height: 1.2;
+}
+
+.brand-description {
+    font-size: var(--text-base);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more-link {
+    color: #d4af8c;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.read-more-link:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.column-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-6);
+    color: var(--primary-900);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--neutral-600);
+    text-decoration: none;
+    font-size: var(--text-base);
+    font-weight: 400;
+    transition: var(--transition-normal);
+    display: block;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid var(--neutral-200);
+    padding: var(--space-6) 0;
+    background: var(--neutral-100);
+}
+
+.partners-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partners-label {
+    color: var(--neutral-600);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.partners-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.partner-name {
+    color: var(--neutral-800);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.see-all-link {
+    color: #d4af8c;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.see-all-link:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* Premium Footer Responsive Design */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .brand-column {
+        grid-column: 1 / -1;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .brand-column {
+        grid-column: 1;
+        text-align: center;
+    }
+    
+    .partners-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .partners-list {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-content {
+        padding: var(--space-8);
+        margin-top: -60px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+    
+    .newsletter-form input {
+        padding: 12px 16px;
+        border-radius: var(--radius-full);
+        text-align: center;
+        border: 1px solid var(--neutral-300);
+    }
+    
+    .subscribe-btn {
+        padding: 12px 24px;
+        align-self: stretch;
+    }
+    
+    .brand-name {
+        font-size: 20px;
+    }
+    
+    .column-title {
+        font-size: 16px;
+    }
+    
+    .footer-links a {
+        font-size: 14px;
+    }
+    
+    .partners-list {
+        gap: 15px;
+    }
+    
+    .partner-name {
+        font-size: 12px;
+    }
+}
+
 /* Back to top button */
 .back-to-top {
     position: fixed;

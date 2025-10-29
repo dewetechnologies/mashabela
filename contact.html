@@ -3,148 +3,654 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us – Mashabela Investments</title>
+    <title>Contact Us || Mashabela Investments</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://themazine.com/mr/conalz-html/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://themazine.com/mr/conalz-html/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://themazine.com/mr/conalz-html/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://themazine.com/mr/conalz-html/assets/images/favicons/site.webmanifest">
+    <meta name="description" content="Mashabela Investments - Integrated Mining and Logistics Services">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/animate/animate.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/animate/custom-animate.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/jarallax/jarallax.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/nouislider/nouislider.pips.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/odometer/odometer.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/swiper/swiper.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/conalz-icons/style.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/tiny-slider/tiny-slider.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/reey-font/stylesheet.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/vegas/vegas.min.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/timepicker/timePicker.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/vendors/polyglot-language-switcher/polyglot-language-switcher.css">
+    
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/css/conalz.css">
+    <link rel="stylesheet" href="https://themazine.com/mr/conalz-html/assets/css/conalz-responsive.css">
+
+    <style>
+        /* Mashabela Investments - Blue Theme Override */
+        :root {
+            --conalz-primary: #005f9e; /* Strong, corporate blue */
+            --conalz-secondary: #0a4d7b; /* Darker blue for hover/accents */
+            --conalz-dark-blue: #003d6b; /* Very dark blue for headings */
+            --conalz-light-blue-bg: #f4f8fb; /* Light blue-grey bg */
+        }
+
+        /* Base Theme Elements */
+        .thm-btn {
+            background-color: var(--conalz-primary);
+        }
+        .thm-btn:hover {
+            background-color: var(--conalz-secondary);
+        }
+        .main-menu__list > li.current > a, 
+        .main-menu__list > li:hover > a {
+            color: var(--conalz-primary);
+        }
+        .main-header__top-address-list .icon span,
+        .main-menu__call-icon span {
+            color: var(--conalz-primary);
+        }
+        .section-title__tagline {
+            color: var(--conalz-primary);
+        }
+        .section-title__title {
+            color: var(--conalz-dark-blue);
+        }
+
+        /* Page Header Styles (for inner pages) */
+        .page-header {
+            padding: 140px 0 150px; /* Standard padding */
+        }
+        .page-header__inner h2 {
+            font-size: 60px; /* Standard title size */
+            color: #ffffff;
+            line-height: 1.1em;
+            font-weight: 800;
+        }
+
+        /* ++++++++++ CONTACT SECTION STYLES ++++++++++ */
+        .contact-form-section {
+            padding: 120px 0 120px;
+            background-color: var(--conalz-light-blue-bg); /* Use light blue bg */
+        }
+        
+        .contact-info-box h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--conalz-dark-blue);
+            margin-bottom: 20px;
+        }
+        
+        .contact-info-box p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .contact-info-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .contact-info-list .icon {
+            font-size: 24px;
+            color: var(--conalz-primary);
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            box-shadow: 0 5px 15px rgba(0,95,158,0.1);
+        }
+        
+        .contact-info-list .text span {
+            display: block;
+            font-size: 14px;
+            color: #777;
+            font-weight: 500;
+        }
+        
+        .contact-info-list .text p {
+            margin-bottom: 0;
+            font-size: 18px;
+            color: var(--conalz-dark-blue);
+            font-weight: 600;
+        }
+        
+        .contact-info-list .text p a {
+            color: var(--conalz-dark-blue);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-list .text p a:hover {
+            color: var(--conalz-primary);
+        }
+
+        /* Style the form from the template */
+        .comment-form {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+        }
+        
+        .comment-form__input-box {
+            margin-bottom: 20px;
+        }
+        
+        .comment-form__input-box input[type="text"],
+        .comment-form__input-box input[type="email"],
+        .comment-form__input-box textarea {
+            display: block;
+            width: 100%;
+            height: 60px;
+            border: 1px solid #e0e0e0;
+            padding: 0 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .comment-form__input-box textarea {
+            height: 150px;
+            padding: 20px;
+        }
+        
+        .comment-form__input-box input[type="text"]:focus,
+        .comment-form__input-box input[type="email"]:focus,
+        .comment-form__input-box textarea:focus {
+            border-color: var(--conalz-primary);
+            box-shadow: 0 0 10px rgba(0,95,158,0.1);
+            outline: none;
+        }
+        
+        .comment-form__btn-box {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Google Map Section */
+        .google-map-section {
+            padding: 120px 0 0;
+        }
+        .google-map {
+            height: 500px;
+            width: 100%;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        /* ++++++++++ END CONTACT STYLES ++++++++++ */
+
+
+        /* ++++++++++ FOOTER TEXT COLOR RULES ++++++++++ */
+        .footer-widget__about-content p,
+        .footer-widget__post-content p,
+        .site-footer__bottom-text p {
+            color: #ffffff !important; /* Force paragraph text white */
+        }
+        
+        .footer-widget__title {
+            color: #ffffff !important; /* Force widget titles white */
+        }
+    
+        /* Force all footer links to be white */
+        .footer-widget__links-list li a,
+        .footer-widget__contact-list .text p a,
+        .footer-widget__post-content h5 a,
+        .site-footer__bottom-text-two li a {
+            color: #ffffff !important;
+        }
+        
+        /* Keep the blue hover effect on links */
+        .footer-widget__links-list li a:hover,
+        .footer-widget__contact-list .text p a:hover,
+        .footer-widget__post-content h5 a:hover,
+        .site-footer__bottom-text-two li a:hover {
+            color: var(--conalz-primary) !important;
+        }
+        /* ++++++++++ END FOOTER RULES ++++++++++ */
+
+    </style>
 </head>
-<body>
-
-    <header>
-        <div class="header-top-bar">
-            <div class="contact-info">
-                <div><i class="fas fa-map-marker-alt"></i> Boksburg</div>
-                <div><i class="fas fa-envelope"></i> mashabelainvestments13@gmail.com</div>
-                <div><i class="fas fa-phone-alt"></i> +27 61 337 0359</div>
-            </div>
-            <div class="social-links">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-
-        <nav class="main-nav">
-            <a href="index.html" class="logo">Mashabela Investments</a>
-            <div class="nav-content" id="nav-content">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <a href="#" class="cta-button">Let's Begin</a>
-            </div>
-            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-    </header>
-
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <p>Home / Contact</p>
-            </div>
-        </section>
-
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-form-wrapper">
-                    <p class="subheading">GET IN TOUCH</p>
-                    <h2>Send Us a Message</h2>
-                    <form action="#" class="contact-form">
-                        <div class="form-row">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+<body class="custom-cursor">
+    <div class="custom-cursor__cursor" style="transform: translate3d(calc(-50% + 725px), calc(-50% + 76px), 0px);"></div>
+    <div class="custom-cursor__cursor-two" style="left: 725px; top: 76px;"></div>
+    <div class="preloader" style="display: none;">
+        <div class="preloader__image"></div>
+    </div>
+    <div class="page-wrapper">
+        <header class="main-header clearfix">
+            <div class="main-header__top">
+                <div class="main-header__top-inner clearfix">
+                    <div class="main-header__top-left">
+                        <ul class="list-unstyled main-header__top-address-list">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email-1"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="mailto:info@mashabelainvestments.co.za">info@mashabelainvestments.co.za</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-clock"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Mon - Fri 8:00 - 6:30</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-header__top-right">
+                        <div class="main-header__btn-box">
+                            <a href="contact.html" class="thm-btn main-header__btn">Request a Quote</a>
                         </div>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <textarea name="message" placeholder="Write your message here..." rows="6" required></textarea>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
+                        <div class="main-header__top-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-details-wrapper">
-                    <div class="contact-info-box">
-                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <h3>Our Address</h3>
-                        <p>Boksburg, Gauteng, South Africa</p>
+            </div>
+            <nav class="main-menu clearfix">
+                <div class="main-menu__wrapper clearfix">
+                    <div class="main-menu__wrapper-inner clearfix">
+                        <div class="main-menu__left">
+                            <div class="main-menu__logo">
+                                <a href="index.html"><img src="https://themazine.com/mr/conalz-html/assets/images/resources/logo-1.png" alt="Mashabela Investments Logo"></a>
+                            </div>
+                            <div class="main-menu__main-menu-box">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
+                                    <li class="dropdown">
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="index.html#services">Services</a>
+                                        <ul>
+                                            <li><a href="index.html#services-mining">Mining-Centric Services</a></li>
+                                            <li><a href="index.html#services-logistics">Integrated Logistics</a></li>
+                                            <li><a href="index.html#services-value">Value-Added Services</a></li>
+                                            <li><a href="index.html#services-support">Support Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="project-v-1.html">Projects</a>
+                                    </li>
+                                    <li class="current">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                                </div>
+                        </div>
+                        <div class="main-menu__right">
+                            <div class="main-menu__call-search">
+                                <div class="main-menu__call">
+                                    <div class="main-menu__call-icon">
+                                        <span class="icon-phone"></span>
+                                    </div>
+                                    <div class="main-menu__call-content">
+                                        <span>Phone Number</span>
+                                        <p><a href="tel:08800115244">(088) 00-11-52-44</a></p>
+                                    </div>
+                                </div>
+                                <div class="main-menu__search-box">
+                                    <p class="main-menu__search-text">Search</p>
+                                    <a href="#" class="main-menu__search search-toggler icon-search"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-info-box">
-                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                        <h3>Email Us</h3>
-                        <p>mashabelainvestments13@gmail.com</p>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content">
+                <div class="main-menu__wrapper clearfix">
+                    <div class="main-menu__wrapper-inner clearfix">
+                        <div class="main-menu__left">
+                            <div class="main-menu__logo">
+                                <a href="index.html"><img src="https://themazine.com/mr/conalz-html/assets/images/resources/logo-1.png" alt="Mashabela Investments Logo"></a>
+                            </div>
+                            <div class="main-menu__main-menu-box">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
+                                    <li class="dropdown">
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="index.html#services">Services</a>
+                                        <ul>
+                                            <li><a href="index.html#services-mining">Mining-Centric Services</a></li>
+                                            <li><a href="index.html#services-logistics">Integrated Logistics</a></li>
+                                            <li><a href="index.html#services-value">Value-Added Services</a></li>
+                                            <li><a href="index.html#services-support">Support Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="project-v-1.html">Projects</a>
+                                    </li>
+                                    <li class="current">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                                </div>
+                        </div>
                     </div>
-                    <div class="contact-info-box">
-                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
-                        <h3>Call Us</h3>
-                        <p>+27 61 337 0359</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(https://themazine.com/mr/conalz-html/assets/images/backgrounds/page-header-bg.jpg);"></div>
+            <div class="page-header__shape-one float-bob-x-2"></div>
+            <div class="page-header__shape-2 float-bob-y">
+                <img src="https://themazine.com/mr/conalz-html/assets/images/shapes/page-header-shape-2.png" alt="">
+            </div>
+            <div class="page-header__shape-3 float-bob-x">
+                <img src="https://themazine.com/mr/conalz-html/assets/images/shapes/page-header-shape-3.png" alt="">
+            </div>
+            <div class="page-header__shape-4 float-bob-y">
+                <img src="https://themazine.com/mr/conalz-html/assets/images/shapes/page-header-shape-4.png" alt="">
+            </div>
+            <div class="container">
+                <div class="page-header__inner text-left">
+                    <ul class="thm-breadcrumb list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-form-section">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline">Get in Touch</span>
+                    <h2 class="section-title__title">Contact Us for a Quote</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="contact-info-box">
+                            <h3>Contact Information</h3>
+                            <p>Have a project in mind? Fill out the form or contact us directly. We're ready to help you find the best solution for your mining and logistics needs.</p>
+                            <ul class="contact-info-list">
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Call Us</span>
+                                        <p><a href="tel:08800115244">(088) 00-11-52-44</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Email Us</span>
+                                        <p><a href="mailto:info@mashabelainvestments.co.za">info@mashabelainvestments.co.za</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Our Address</span>
+                                        <p>123 Mining Rd, Johannesburg, SA</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
+                        <form action="#" class="comment-form">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="text" placeholder="Your name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="email" placeholder="Email address" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="text" placeholder="Phone" name="phone">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="text" placeholder="Subject" name="subject" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="comment-form__input-box text-message-box">
+                                        <textarea name="message" placeholder="Write a message" required></textarea>
+                                    </div>
+                                    <div class="comment-form__btn-box">
+                                        <button type="submit" class="thm-btn">Send a Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="map-section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.9410288298!2d28.1833599428383!3d-26.21090903335016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951b93161140b3%3A0x8685bb39396a8358!2sBoksburg!5e0!3m2!1sen!2sza!4v1668512345678!5m2!1sen!2sza" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="google-map-section">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-xl-12">
+                         <div class="google-map">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458402.1099318252!2d27.766343818987654!3d-26.17145326752694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a61%3A0x86f44e916060e15b!2sJohannesburg!5e0!3m2!1sen!2sza!4v1678888888888!5m2!1sen!2sza" class="google-map__one" allowfullscreen="" loading="lazy"></iframe>
+                         </div>
+                     </div>
+                 </div>
+             </div>
         </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-widget about-widget">
-                    <a href="index.html" class="footer-logo">Mashabela</a>
-                    <p>Your partner in innovative problem solving. We provide world-class business solutions to help you succeed.</p>
-                </div>
-                <div class="footer-widget links-widget">
-                    <h3 class="widget-title">Quick Links</h3>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-widget contact-widget">
-                    <h3 class="widget-title">Contact Info</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Boksburg</li>
-                        <li><i class="fas fa-envelope"></i> mashabelainvestments13@gmail.com</li>
-                        <li><i class="fas fa-phone-alt"></i> +27 61 337 0359</li>
-                    </ul>
-                </div>
-                <div class="footer-widget newsletter-widget">
-                    <h3 class="widget-title">Newsletter</h3>
-                    <p>Subscribe for the latest updates.</p>
-                    <form id="newsletter-form" class="newsletter-form">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+        <footer class="site-footer">
+            <div class="site-footer-bg" style="background-image: url(https://themazine.com/mr/conalz-html/assets/images/backgrounds/site-footer-bg.jpg);"></div>
+            <div class="site-footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__about-logo-box">
+                                    <div class="footer-widget__about-logo">
+                                        <a href="#">
+                                            <img src="https://themazine.com/mr/conalz-html/assets/images/resources/footer-logo-1.png" alt="Mashabela Investments Footer Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="footer-widget__about-content">
+                                    <p>Your trusted partner in integrated <br> mining and logistics solutions, <br> from source to destination.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__column footer-widget__links">
+                                <div class="footer-widget__title-box">
+                                    <h3 class="footer-widget__title">Explore</h3>
+                                </div>
+                                <ul class="footer-widget__links-list list-unstyled">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="index.html#services">Services</a></li>
+                                    <li><a href="project-v-1.html">Projects</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="footer-widget__column footer-widget__contact">
+                                <div class="footer-widget__title-box">
+                                    <h3 class="footer-widget__title">Contact</h3>
+                                </div>
+                                <ul class="footer-widget__contact-list list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-email-1"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="mailto:info@mashabelainvestments.co.za">info@mashabelainvestments.co.za</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-phone"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="tel:08800115244">(088) 00-11-52-44</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__column footer-widget__post">
+                                <div class="footer-widget__title-box">
+                                    <h3 class="footer-widget__title">Recent Post</h3>
+                                </div>
+                                <ul class="footer-widget__post-list list-unstyled">
+                                    <li>
+                                        <div class="footer-widget__post-img">
+                                            <img src="https://themazine.com/mr/conalz-html/assets/images/blog/footer-widget-post-img-1.jpg" alt="">
+                                        </div>
+                                        <div class="footer-widget__post-content">
+                                            <p>20 May, 2022</p>
+                                            <h5><a href="blog-details.html">What is digital
+                                                    transformation?</a></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-widget__post-img">
+                                            <img src="https://themazine.com/mr/conalz-html/assets/images/blog/footer-widget-post-img-2.jpg" alt="">
+                                        </div>
+                                        <div class="footer-widget__post-content">
+                                            <p>20 May, 2022</p>
+                                            <h5><a href="blog-details.html">What is digital
+                                                    transformation?</a></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="copyright">
-                    <p>&copy; 2024 Mashabela Investments. All Rights Reserved.</p>
-                    <p>Website was made by DeWet Technologies</p>
-                </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="site-footer__bottom-inner">
+                                <div class="site-footer__bottom-text">
+                                    <p>Copyright © 2025 Mashabela Investments. All Rights Reserved.</p>
+                                </div>
+                                <ul class="site-footer__bottom-text-two list-unstyled">
+                                    <li><a href="about.html">Terms of Use</a></li>
+                                    <li><a href="about.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </footer>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="https://themazine.com/mr/conalz-html/assets/images/resources/footer-logo-1.png" width="143" alt="Mashabela Investments Logo"></a>
+            </div>
+            <div class="mobile-nav__container"></div> 
+        </div>
+    </div>
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label>
+                <input type="text" id="search" placeholder="Search Here...">
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top" style="display: none;"><i class="fa fa-angle-up"></i></a>
+
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/odometer/odometer.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/swiper/swiper.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/wow/wow.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/isotope/isotope.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/countdown/countdown.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/vegas/vegas.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/timepicker/timePicker.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/circleType/jquery.circleType.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/circleType/jquery.lettering.min.js"></script>
+    <script src="https://themazine.com/mr/conalz-html/assets/vendors/polyglot-language-switcher/jquery.polyglot.language.switcher.js"></script>
+    
+   
+    <script src="https://themazine.com/mr/conalz-html/assets/js/conalz.js"></script>
 </body>
 </html>
